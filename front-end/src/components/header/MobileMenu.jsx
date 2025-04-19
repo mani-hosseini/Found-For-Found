@@ -107,17 +107,21 @@ const MobileMenuContent = ({ onClose }) => (
             </div>
 
             <div className="w-full border-t border-gray-200 pt-4 mt-4">
-                <div className="px-4 py-7">
-                    <Link href="/login-signup" onClick={onClose}>
-                        <button className="w-full py-2 px-4 rounded-lg border border-[#AA99EC] bg-[#EDE9FE] text-[#644FC1] font-medium mb-4 hover:bg-[#EDE9FE]/90 transition-colors duration-200">
-                            Login/Signup
-                        </button>
+                <div className="px-4 py-7 space-y-4">
+                    <Link 
+                        href="/login-signup" 
+                        onClick={onClose}
+                        className="w-full py-2 px-4 rounded-lg border border-[#AA99EC] bg-[#EDE9FE] text-[#644FC1] font-medium hover:bg-[#EDE9FE]/90 transition-colors duration-200 inline-flex items-center justify-center"
+                    >
+                        Login/Signup
                     </Link>
 
-                    <Link href="/signin" onClick={onClose}>
-                        <button className="w-full py-2 px-4 rounded-lg border border-[#644FC1] bg-[#644FC1] text-white font-medium hover:bg-[#644FC1]/90 transition-colors duration-200">
-                            Start
-                        </button>
+                    <Link 
+                        href="/signin" 
+                        onClick={onClose}
+                        className="w-full py-2 px-4 rounded-lg border border-[#644FC1] bg-[#644FC1] text-white font-medium hover:bg-[#644FC1]/90 transition-colors duration-200 inline-flex items-center justify-center"
+                    >
+                        Start
                     </Link>
                 </div>
             </div>
@@ -125,7 +129,7 @@ const MobileMenuContent = ({ onClose }) => (
     </div>
 );
 
-export default function MobileMenu() {
+const MobileMenu = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [showSearch, setShowSearch] = useState(false);
 
@@ -161,4 +165,6 @@ export default function MobileMenu() {
             {isOpen && <MobileMenuContent onClose={handleClose} />}
         </div>
     );
-}
+};
+
+export default MobileMenu;

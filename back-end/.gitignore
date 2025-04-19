@@ -8,8 +8,6 @@ dist/
 # Temporary Strapi files
 .tmp/
 
-# Uploads directory (if you don't want to track media)
-public/uploads/
 
 # Logs
 logs/

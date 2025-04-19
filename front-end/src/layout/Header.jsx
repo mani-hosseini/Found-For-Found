@@ -1,15 +1,20 @@
 "use client";
 
 import React from 'react';
-import Logo from '../components/header/Logo';
-import MainMenu from '../components/header/MainMenu';
-import SearchAndAuth from '../components/header/SearchAndAuth';
-import MobileMenu from '../components/header/MobileMenu';
-import SignInButton from '../components/header/SignInButton';
+import dynamic from 'next/dynamic';
+import Logo from '@/components/header/Logo';
+import MainMenu from '@/components/header/MainMenu';
+import SearchAndAuth from '@/components/header/SearchAndAuth';
+import SignInButton from '@/components/header/SignInButton';
 
-export default function Header() {
+const MobileMenu = dynamic(() => import('@/components/header/MobileMenu'), {
+  ssr: false,
+  loading: () => <div className="w-6 h-6" /> // Placeholder while loading
+});
+
+const Header = () => {
   return (
-    <header className="w-full bg-white">
+    <header className="sticky top-0 z-50 w-full bg-white">
       <div className="w-full md:border-b-2 border-[#D7CFF9]">
         <div className="w-[85%] mx-auto py-4">
           <div className="flex items-center justify-between">
@@ -31,4 +36,6 @@ export default function Header() {
       </div>
     </header>
   );
-} 
+};
+
+export default Header; 

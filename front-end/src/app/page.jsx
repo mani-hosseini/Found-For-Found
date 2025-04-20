@@ -4,7 +4,7 @@ import Carthome from "@/components/home/cart";
 
 export default function Home() {
   return (
-    <main className={'px-6 lg:px-0'}>
+    <main className={'px-6'}>
       <section className="container mx-auto">
           <div className={'flex flex-col items-center justify-center'}>
               <Description/>

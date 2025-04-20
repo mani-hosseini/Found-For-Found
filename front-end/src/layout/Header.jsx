@@ -9,7 +9,7 @@ import SignInButton from '@/components/header/SignInButton';
 
 const MobileMenu = dynamic(() => import('@/components/header/MobileMenu'), {
   ssr: false,
-  loading: () => <div className="w-6 h-6" /> // Placeholder while loading
+  loading: () => <div className="w-6 h-6" />
 });
 
 const Header = () => {

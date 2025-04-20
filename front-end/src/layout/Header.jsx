@@ -14,7 +14,7 @@ const MobileMenu = dynamic(() => import('@/components/header/MobileMenu'), {
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-50 w-full bg-white">
+    <header className="sticky lg:mb-24 mb-10 w-full bg-white">
       <div className="w-full md:border-b-2 border-[#D7CFF9]">
         <div className="w-[85%] mx-auto py-4">
           <div className="flex items-center justify-between">

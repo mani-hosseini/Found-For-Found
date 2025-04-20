@@ -9,7 +9,7 @@ import FooterData from '@/components/footer/FooterData';
 
 const Footer = () => {
     return (
-        <footer className="bg-[#F5F5F5] pt-12 rounded-t-4xl" aria-label="Site footer">
+        <footer className="bg-[#F5F5F5] lg:mt-24 mt-10 pt-12 rounded-t-4xl" aria-label="Site footer">
             <div className="w-[85%] mx-auto">
                 <div className="grid grid-cols-3 md:grid-cols-5 mb-16">
                     {FooterData.sections.map((section) => (

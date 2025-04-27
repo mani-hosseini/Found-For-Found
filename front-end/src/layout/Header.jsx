@@ -9,12 +9,12 @@ import SignInButton from '@/components/header/SignInButton';
 
 const MobileMenu = dynamic(() => import('@/components/header/MobileMenu'), {
   ssr: false,
-  loading: () => <div className="w-6 h-6" /> // Placeholder while loading
+  loading: () => <div className="w-6 h-6" />
 });
 
 const Header = () => {
   return (
-    <header className="sticky lg:mb-24 mb-10 w-full bg-white">
+    <header className="relative h-auto lg:mb-24 mb-10 w-full bg-white z-50">
       <div className="w-full md:border-b-2 border-[#D7CFF9]">
         <div className="w-[85%] mx-auto py-4">
           <div className="flex items-center justify-between">

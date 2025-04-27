@@ -18,7 +18,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="w-full border-t border-gray-200 mb-4"/>
+            <div className="w-full  border-t border-gray-200 mb-4"/>
 
             <div className="w-[85%] mx-auto pb-8">
                 <div className="flex flex-col md:flex-row items-center justify-between">
